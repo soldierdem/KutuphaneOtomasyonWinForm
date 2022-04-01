@@ -29,6 +29,10 @@ namespace KutuphaneOtomasyonWinForm
             if(personel != null)
             {
                 MessageBox.Show("Başarılı Giriş");
+
+                IslemPaneli ıslemPaneli = new IslemPaneli();
+                ıslemPaneli.Show();
+                this.Hide(); //Yeni form açılınca bu formu gizle...
             }
             else
             {
