@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace KutuphaneOtomasyonWinForm
+namespace KutuphaneOtomasyonWinForm.Kullanici
 {
-    public partial class KullaniciListeForm : Form
+    public partial class KullaniciEkleForm : Form
     {
-        public KullaniciListeForm()
+        public KullaniciEkleForm()
         {
             InitializeComponent();
-        }
-
-        public void Listele()
-        {
-
-        }
-
-        private void KullaniciListeForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

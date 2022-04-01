@@ -98,6 +98,7 @@
             this.ekleKullaniciBtn.TabIndex = 1;
             this.ekleKullaniciBtn.Text = "Ekle";
             this.ekleKullaniciBtn.UseVisualStyleBackColor = false;
+            this.ekleKullaniciBtn.Click += new System.EventHandler(this.ekleKullaniciBtn_Click);
             // 
             // kullanicilarBtn
             // 

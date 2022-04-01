@@ -29,6 +29,7 @@ namespace KutuphaneOtomasyonWinForm
             //dataGridViewKullanicilar.Visible = false;        
         }
 
+
         private void kullanicilarBtn_Click(object sender, EventArgs e)
         {
 
@@ -60,6 +61,11 @@ namespace KutuphaneOtomasyonWinForm
 
             //var kullanicilar = db.KullanicilarTab.ToList();
             //dataGridViewKullanicilar.DataSource = kullanicilar.ToList();
+        }
+
+        private void ekleKullaniciBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
