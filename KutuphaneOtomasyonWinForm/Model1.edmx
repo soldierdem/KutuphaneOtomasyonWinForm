@@ -4,7 +4,19 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="KutuphaneOtomasyonModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="KutuphaneOtomasyonModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="KullanicilarTab">
+          <Key>
+            <PropertyRef Name="kullanici_ID" />
+          </Key>
+          <Property Name="kullanici_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kullanici_Ad" Type="nvarchar" MaxLength="50" />
+          <Property Name="kullanici_Soyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="kullanici_TC" Type="nvarchar" MaxLength="11" />
+          <Property Name="kullanici_Tel" Type="nvarchar" MaxLength="11" />
+          <Property Name="kullanici_Mail" Type="nvarchar" MaxLength="50" />
+          <Property Name="kullanici_Ceza" Type="float" />
+        </EntityType>
         <EntityType Name="PersonellerTab">
           <Key>
             <PropertyRef Name="personel_ID" />
@@ -19,10 +31,10 @@
           <Property Name="personel_Sifre" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityContainer Name="KutuphaneOtomasyonModelStoreContainer">
+          <EntitySet Name="KullanicilarTab" EntityType="Self.KullanicilarTab" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PersonellerTab" EntityType="Self.PersonellerTab" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="KutuphaneOtomasyonModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -41,7 +53,20 @@
         </EntityType>
         <EntityContainer Name="KutuphaneOtomasyonEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="PersonellerTab" EntityType="Self.PersonellerTab" />
+          <EntitySet Name="KullanicilarTab" EntityType="KutuphaneOtomasyonModel.KullanicilarTab" />
         </EntityContainer>
+        <EntityType Name="KullanicilarTab">
+          <Key>
+            <PropertyRef Name="kullanici_ID" />
+          </Key>
+          <Property Name="kullanici_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kullanici_Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="kullanici_Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="kullanici_TC" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="kullanici_Tel" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="kullanici_Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="kullanici_Ceza" Type="Double" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -59,6 +84,19 @@
                 <ScalarProperty Name="personel_Mail" ColumnName="personel_Mail" />
                 <ScalarProperty Name="personel_KullaniciAd" ColumnName="personel_KullaniciAd" />
                 <ScalarProperty Name="personel_Sifre" ColumnName="personel_Sifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KullanicilarTab">
+            <EntityTypeMapping TypeName="KutuphaneOtomasyonModel.KullanicilarTab">
+              <MappingFragment StoreEntitySet="KullanicilarTab">
+                <ScalarProperty Name="kullanici_Ceza" ColumnName="kullanici_Ceza" />
+                <ScalarProperty Name="kullanici_Mail" ColumnName="kullanici_Mail" />
+                <ScalarProperty Name="kullanici_Tel" ColumnName="kullanici_Tel" />
+                <ScalarProperty Name="kullanici_TC" ColumnName="kullanici_TC" />
+                <ScalarProperty Name="kullanici_Soyad" ColumnName="kullanici_Soyad" />
+                <ScalarProperty Name="kullanici_Ad" ColumnName="kullanici_Ad" />
+                <ScalarProperty Name="kullanici_ID" ColumnName="kullanici_ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

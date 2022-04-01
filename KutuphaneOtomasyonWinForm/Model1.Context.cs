@@ -26,5 +26,6 @@ namespace KutuphaneOtomasyonWinForm
         }
     
         public virtual DbSet<PersonellerTab> PersonellerTab { get; set; }
+        public virtual DbSet<KullanicilarTab> KullanicilarTab { get; set; }
     }
 }

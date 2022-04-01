@@ -48,10 +48,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(69, 232);
+            this.label1.Location = new System.Drawing.Point(46, 233);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.Size = new System.Drawing.Size(87, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Personel Adı:";
             // 
@@ -65,20 +66,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(63, 286);
+            this.label2.Location = new System.Drawing.Point(46, 287);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.Size = new System.Drawing.Size(94, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Personel Şifre:";
             // 
             // personelGirisBtn
             // 
-            this.personelGirisBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.personelGirisBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.personelGirisBtn.Location = new System.Drawing.Point(168, 343);
+            this.personelGirisBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(64)))), ((int)(((byte)(83)))));
+            this.personelGirisBtn.FlatAppearance.BorderSize = 0;
+            this.personelGirisBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.personelGirisBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.personelGirisBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.personelGirisBtn.Location = new System.Drawing.Point(146, 329);
             this.personelGirisBtn.Name = "personelGirisBtn";
-            this.personelGirisBtn.Size = new System.Drawing.Size(75, 23);
+            this.personelGirisBtn.Size = new System.Drawing.Size(96, 37);
             this.personelGirisBtn.TabIndex = 4;
             this.personelGirisBtn.Text = "Giriş";
             this.personelGirisBtn.UseVisualStyleBackColor = false;
@@ -106,9 +111,10 @@
             this.Controls.Add(this.personelSifreGiristxt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.personelAdGiristxt);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Giris Ekrani";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
