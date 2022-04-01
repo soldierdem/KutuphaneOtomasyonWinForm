@@ -55,17 +55,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="GirisPaneli.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GirisPaneli.Designer.cs">
+      <DependentUpon>GirisPaneli.cs</DependentUpon>
     </Compile>
     <Compile Include="IslemPaneli.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IslemPaneli.Designer.cs">
       <DependentUpon>IslemPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanicilarTab.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciListeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciListeForm.Designer.cs">
+      <DependentUpon>KullaniciListeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -87,11 +96,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GirisPaneli.resx">
+      <DependentUpon>GirisPaneli.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IslemPaneli.resx">
       <DependentUpon>IslemPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciListeForm.resx">
+      <DependentUpon>KullaniciListeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

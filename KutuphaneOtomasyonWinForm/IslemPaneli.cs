@@ -17,15 +17,21 @@ namespace KutuphaneOtomasyonWinForm
             InitializeComponent();
         }
 
+        int buttonClickCount = 0;
+
+        KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
+
         private void IslemPaneli_Load(object sender, EventArgs e)
         {
             ekleKullaniciBtn.Visible = false;
             guncelleKullaniciBtn.Visible = false;
             silKullaniciBtn.Visible = false;
+            //dataGridViewKullanicilar.Visible = false;        
         }
 
         private void kullanicilarBtn_Click(object sender, EventArgs e)
         {
+
             if (ekleKullaniciBtn.Visible == false)
             {
                 ekleKullaniciBtn.Visible = true;
@@ -38,7 +44,22 @@ namespace KutuphaneOtomasyonWinForm
                 guncelleKullaniciBtn.Visible = false;
                 silKullaniciBtn.Visible = false;
             }
-            
+
+
+            if (buttonClickCount == 0)
+            {
+                buttonClickCount += 1;
+
+                KullaniciListeForm kullaniciListeForm = new KullaniciListeForm();
+                kullaniciListeForm.MdiParent = this;
+                kullaniciListeForm.Show();
+            }
+
+
+            //dataGridViewKullanicilar.Visible = true;
+
+            //var kullanicilar = db.KullanicilarTab.ToList();
+            //dataGridViewKullanicilar.DataSource = kullanicilar.ToList();
         }
     }
 }

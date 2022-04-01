@@ -10,13 +10,14 @@ using System.Windows.Forms;
 
 namespace KutuphaneOtomasyonWinForm
 {
-    public partial class Form1 : Form
+    public partial class GirisPaneli : Form
     {
-        KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
-        public Form1()
+        public GirisPaneli()
         {
             InitializeComponent();
         }
+
+        KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
 
         private void personelGirisBtn_Click(object sender, EventArgs e)
         {

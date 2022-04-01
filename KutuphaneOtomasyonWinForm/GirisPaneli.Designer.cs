@@ -1,6 +1,6 @@
 ﻿namespace KutuphaneOtomasyonWinForm
 {
-    partial class Form1
+    partial class GirisPaneli
     {
         /// <summary>
         ///Gerekli tasarımcı değişkeni.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GirisPaneli));
             this.personelAdGiristxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.personelSifreGiristxt = new System.Windows.Forms.TextBox();
