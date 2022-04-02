@@ -66,6 +66,7 @@
             this.silKullaniciBtn.TabIndex = 4;
             this.silKullaniciBtn.Text = "Sil";
             this.silKullaniciBtn.UseVisualStyleBackColor = false;
+            this.silKullaniciBtn.Click += new System.EventHandler(this.silKullaniciBtn_Click);
             // 
             // guncelleKullaniciBtn
             // 
@@ -82,6 +83,7 @@
             this.guncelleKullaniciBtn.TabIndex = 3;
             this.guncelleKullaniciBtn.Text = "Guncelle";
             this.guncelleKullaniciBtn.UseVisualStyleBackColor = false;
+            this.guncelleKullaniciBtn.Click += new System.EventHandler(this.guncelleKullaniciBtn_Click);
             // 
             // ekleKullaniciBtn
             // 

@@ -21,6 +21,8 @@ namespace KutuphaneOtomasyonWinForm
         int buttonClickCount = 0;
         int buttonClickCount2 = 0;
 
+        int buttonClickCount4 = 0;
+
 
         KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
 
@@ -76,6 +78,23 @@ namespace KutuphaneOtomasyonWinForm
                 KullaniciEkleForm kullaniciEkleForm = new KullaniciEkleForm();
                 kullaniciEkleForm.MdiParent = this;
                 kullaniciEkleForm.Show();
+            }
+        }
+
+        private void guncelleKullaniciBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void silKullaniciBtn_Click(object sender, EventArgs e)
+        {
+            if (buttonClickCount4 == 0)
+            {
+                buttonClickCount4 += 1;
+
+                KullaniciSilForm kullaniciSilForm = new KullaniciSilForm();
+                kullaniciSilForm.MdiParent = this;
+                kullaniciSilForm.Show();
             }
         }
     }
