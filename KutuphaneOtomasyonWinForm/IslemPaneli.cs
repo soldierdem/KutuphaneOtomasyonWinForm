@@ -20,7 +20,7 @@ namespace KutuphaneOtomasyonWinForm
 
         int buttonClickCount = 0;
         int buttonClickCount2 = 0;
-
+        int buttonClickCount3 = 0;
         int buttonClickCount4 = 0;
 
 
@@ -83,7 +83,14 @@ namespace KutuphaneOtomasyonWinForm
 
         private void guncelleKullaniciBtn_Click(object sender, EventArgs e)
         {
+            if(buttonClickCount3 == 0)
+            {
+                buttonClickCount3 += 1;
 
+                KullaniciGuncelleForm kullaniciGuncelleForm = new KullaniciGuncelleForm();
+                kullaniciGuncelleForm.MdiParent = this;
+                kullaniciGuncelleForm.Show();
+            }
         }
 
         private void silKullaniciBtn_Click(object sender, EventArgs e)
