@@ -48,16 +48,16 @@ namespace KutuphaneOtomasyonWinForm.Kullanici
             kullaniciTCEkletxt.Text = dataGridGuncelleView.CurrentRow.Cells[4].Value.ToString();
             kullaniciTelEkletxt.Text = dataGridGuncelleView.CurrentRow.Cells[5].Value.ToString();
             kullaniciMailEkletxt.Text = dataGridGuncelleView.CurrentRow.Cells[6].Value.ToString();
-           
-        /*  if(dataGridGuncelleView.CurrentRow.Cells[7].Value.ToString() == null)
-            {
-                kullaniciCezaEkletxt.Text = "0";
-            }
-            else
-            {
-                kullaniciCezaEkletxt.Text = dataGridGuncelleView.CurrentRow.Cells[7].Value.ToString();
-            }
-        */
+            kullaniciCezaEkletxt.Text = dataGridGuncelleView.CurrentRow.Cells[7].Value.ToString();
+
+            /*  if(dataGridGuncelleView.CurrentRow.Cells[7].Value.ToString() == null)
+                {
+                    kullaniciCezaEkletxt.Text = "0";
+                }
+                else
+                {
+                }
+            */
         }
 
         private void kullaniciEkleGuncelleBtn_Click(object sender, EventArgs e)
@@ -77,10 +77,6 @@ namespace KutuphaneOtomasyonWinForm.Kullanici
             {
                 kullanici.kullanici_Cinsiyet = "K";
             }
-            /*else
-            {
-                MessageBox.Show("Cinsiyet boş geçilemez...");
-            }*/
 
             kullanici.kullanici_TC = kullaniciTCEkletxt.Text;
             kullanici.kullanici_Tel = kullaniciTelEkletxt.Text;

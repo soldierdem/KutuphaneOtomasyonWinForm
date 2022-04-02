@@ -17,10 +17,10 @@ namespace KutuphaneOtomasyonWinForm
         public int kullanici_ID { get; set; }
         public string kullanici_Ad { get; set; }
         public string kullanici_Soyad { get; set; }
+        public string kullanici_Cinsiyet { get; set; }
         public string kullanici_TC { get; set; }
         public string kullanici_Tel { get; set; }
         public string kullanici_Mail { get; set; }
         public Nullable<double> kullanici_Ceza { get; set; }
-        public string kullanici_Cinsiyet { get; set; }
     }
 }

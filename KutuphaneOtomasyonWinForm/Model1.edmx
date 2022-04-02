@@ -63,11 +63,11 @@
           <Property Name="kullanici_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="kullanici_Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="kullanici_Cinsiyet" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_TC" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_Tel" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_Ceza" Type="Double" />
-          <Property Name="kullanici_Cinsiyet" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
