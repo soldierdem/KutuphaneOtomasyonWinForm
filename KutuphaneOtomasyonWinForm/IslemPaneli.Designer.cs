@@ -35,12 +35,21 @@
             this.ekleKullaniciBtn = new System.Windows.Forms.Button();
             this.kullanicilarBtn = new System.Windows.Forms.Button();
             this.kullaniciBilgiPanel = new System.Windows.Forms.Panel();
+            this.kitaplarBtn = new System.Windows.Forms.Button();
+            this.ekleKitapBtn = new System.Windows.Forms.Button();
+            this.guncelleKitapBtn = new System.Windows.Forms.Button();
+            this.silKitapBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(55)))), ((int)(((byte)(71)))));
+            this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.silKitapBtn);
+            this.panel1.Controls.Add(this.guncelleKitapBtn);
+            this.panel1.Controls.Add(this.ekleKitapBtn);
+            this.panel1.Controls.Add(this.kitaplarBtn);
             this.panel1.Controls.Add(this.silKullaniciBtn);
             this.panel1.Controls.Add(this.guncelleKullaniciBtn);
             this.panel1.Controls.Add(this.ekleKullaniciBtn);
@@ -128,6 +137,71 @@
             this.kullaniciBilgiPanel.Size = new System.Drawing.Size(624, 68);
             this.kullaniciBilgiPanel.TabIndex = 1;
             // 
+            // kitaplarBtn
+            // 
+            this.kitaplarBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.kitaplarBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kitaplarBtn.FlatAppearance.BorderSize = 0;
+            this.kitaplarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.kitaplarBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.kitaplarBtn.Image = ((System.Drawing.Image)(resources.GetObject("kitaplarBtn.Image")));
+            this.kitaplarBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.kitaplarBtn.Location = new System.Drawing.Point(0, 272);
+            this.kitaplarBtn.Name = "kitaplarBtn";
+            this.kitaplarBtn.Size = new System.Drawing.Size(190, 68);
+            this.kitaplarBtn.TabIndex = 14;
+            this.kitaplarBtn.Text = "Kitaplar";
+            this.kitaplarBtn.UseVisualStyleBackColor = false;
+            this.kitaplarBtn.Click += new System.EventHandler(this.kitaplarBtn_Click);
+            // 
+            // ekleKitapBtn
+            // 
+            this.ekleKitapBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
+            this.ekleKitapBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ekleKitapBtn.FlatAppearance.BorderSize = 0;
+            this.ekleKitapBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ekleKitapBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ekleKitapBtn.Image = ((System.Drawing.Image)(resources.GetObject("ekleKitapBtn.Image")));
+            this.ekleKitapBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ekleKitapBtn.Location = new System.Drawing.Point(0, 340);
+            this.ekleKitapBtn.Name = "ekleKitapBtn";
+            this.ekleKitapBtn.Size = new System.Drawing.Size(190, 68);
+            this.ekleKitapBtn.TabIndex = 20;
+            this.ekleKitapBtn.Text = "Ekle";
+            this.ekleKitapBtn.UseVisualStyleBackColor = false;
+            // 
+            // guncelleKitapBtn
+            // 
+            this.guncelleKitapBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
+            this.guncelleKitapBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guncelleKitapBtn.FlatAppearance.BorderSize = 0;
+            this.guncelleKitapBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.guncelleKitapBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.guncelleKitapBtn.Image = ((System.Drawing.Image)(resources.GetObject("guncelleKitapBtn.Image")));
+            this.guncelleKitapBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.guncelleKitapBtn.Location = new System.Drawing.Point(0, 408);
+            this.guncelleKitapBtn.Name = "guncelleKitapBtn";
+            this.guncelleKitapBtn.Size = new System.Drawing.Size(190, 68);
+            this.guncelleKitapBtn.TabIndex = 21;
+            this.guncelleKitapBtn.Text = "Guncelle";
+            this.guncelleKitapBtn.UseVisualStyleBackColor = false;
+            // 
+            // silKitapBtn
+            // 
+            this.silKitapBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
+            this.silKitapBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.silKitapBtn.FlatAppearance.BorderSize = 0;
+            this.silKitapBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.silKitapBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.silKitapBtn.Image = ((System.Drawing.Image)(resources.GetObject("silKitapBtn.Image")));
+            this.silKitapBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.silKitapBtn.Location = new System.Drawing.Point(0, 476);
+            this.silKitapBtn.Name = "silKitapBtn";
+            this.silKitapBtn.Size = new System.Drawing.Size(190, 68);
+            this.silKitapBtn.TabIndex = 22;
+            this.silKitapBtn.Text = "Sil";
+            this.silKitapBtn.UseVisualStyleBackColor = false;
+            // 
             // IslemPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,5 +228,9 @@
         private System.Windows.Forms.Button ekleKullaniciBtn;
         private System.Windows.Forms.Button kullanicilarBtn;
         private System.Windows.Forms.Panel kullaniciBilgiPanel;
+        private System.Windows.Forms.Button kitaplarBtn;
+        private System.Windows.Forms.Button silKitapBtn;
+        private System.Windows.Forms.Button guncelleKitapBtn;
+        private System.Windows.Forms.Button ekleKitapBtn;
     }
 }

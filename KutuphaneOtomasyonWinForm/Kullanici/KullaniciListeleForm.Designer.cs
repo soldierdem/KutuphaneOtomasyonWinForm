@@ -1,6 +1,6 @@
 ﻿namespace KutuphaneOtomasyonWinForm
 {
-    partial class KullaniciListeForm
+    partial class KullaniciListeleForm
     {
         /// <summary>
         /// Required designer variable.

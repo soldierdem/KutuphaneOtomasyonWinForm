@@ -1,4 +1,5 @@
-﻿using KutuphaneOtomasyonWinForm.Kullanici;
+﻿using KutuphaneOtomasyonWinForm.Kitap;
+using KutuphaneOtomasyonWinForm.Kullanici;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,16 +23,24 @@ namespace KutuphaneOtomasyonWinForm
         int buttonClickCount2 = 0;
         int buttonClickCount3 = 0;
         int buttonClickCount4 = 0;
+        int buttonClickCount5 = 0;
+
 
 
         KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
 
         private void IslemPaneli_Load(object sender, EventArgs e)
         {
+            //Kullanici butonları başlangıçta kapalıdır.(ekle-güncelle-sil)
             ekleKullaniciBtn.Visible = false;
             guncelleKullaniciBtn.Visible = false;
             silKullaniciBtn.Visible = false;
-            //dataGridViewKullanicilar.Visible = false;        
+            //dataGridViewKullanicilar.Visible = false;
+
+            //Kitap butonları başlangıçta kapalıdır.(ekle-güncelle-sil)
+            ekleKitapBtn.Visible = false;
+            guncelleKitapBtn.Visible = false;
+            silKitapBtn.Visible = false;
         }
 
 
@@ -56,7 +65,7 @@ namespace KutuphaneOtomasyonWinForm
             {
                 buttonClickCount += 1;
 
-                KullaniciListeForm kullaniciListeForm = new KullaniciListeForm();
+                KullaniciListeleForm kullaniciListeForm = new KullaniciListeleForm();
                 kullaniciListeForm.MdiParent = this;
                 kullaniciListeForm.Show();
             }
@@ -104,5 +113,31 @@ namespace KutuphaneOtomasyonWinForm
                 kullaniciSilForm.Show();
             }
         }
+
+        private void kitaplarBtn_Click(object sender, EventArgs e)
+        {
+            if (ekleKitapBtn.Visible == false)
+            {
+                ekleKitapBtn.Visible = true;
+                guncelleKitapBtn.Visible = true;
+                silKitapBtn.Visible = true;
+            }
+            else
+            {
+                ekleKitapBtn.Visible = false;
+                guncelleKitapBtn.Visible = false;
+                silKitapBtn.Visible = false;
+            }
+
+            if (buttonClickCount5 == 0)
+            {
+                buttonClickCount5 += 1;
+
+                KitapListeleForm kitapListeleForm = new KitapListeleForm();
+                kitapListeleForm.MdiParent = this;
+                kitapListeleForm.Show();
+            }
+        }
+
     }
 }

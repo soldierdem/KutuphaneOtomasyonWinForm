@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace KutuphaneOtomasyonWinForm
 {
-    public partial class KullaniciListeForm : Form
+    public partial class KullaniciListeleForm : Form
     {
-        public KullaniciListeForm()
+        public KullaniciListeleForm()
         {
             InitializeComponent();
         }
