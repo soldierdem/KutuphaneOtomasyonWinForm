@@ -21,5 +21,6 @@ namespace KutuphaneOtomasyonWinForm
         public string kullanici_Tel { get; set; }
         public string kullanici_Mail { get; set; }
         public Nullable<double> kullanici_Ceza { get; set; }
+        public string kullanici_Cinsiyet { get; set; }
     }
 }

@@ -12,6 +12,7 @@
           <Property Name="kullanici_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="kullanici_Ad" Type="nvarchar" MaxLength="50" />
           <Property Name="kullanici_Soyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="kullanici_Cinsiyet" Type="nvarchar" MaxLength="1" />
           <Property Name="kullanici_TC" Type="nvarchar" MaxLength="11" />
           <Property Name="kullanici_Tel" Type="nvarchar" MaxLength="11" />
           <Property Name="kullanici_Mail" Type="nvarchar" MaxLength="50" />
@@ -66,6 +67,7 @@
           <Property Name="kullanici_Tel" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="kullanici_Ceza" Type="Double" />
+          <Property Name="kullanici_Cinsiyet" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -90,6 +92,7 @@
           <EntitySetMapping Name="KullanicilarTab">
             <EntityTypeMapping TypeName="KutuphaneOtomasyonModel.KullanicilarTab">
               <MappingFragment StoreEntitySet="KullanicilarTab">
+                <ScalarProperty Name="kullanici_Cinsiyet" ColumnName="kullanici_Cinsiyet" />
                 <ScalarProperty Name="kullanici_Ceza" ColumnName="kullanici_Ceza" />
                 <ScalarProperty Name="kullanici_Mail" ColumnName="kullanici_Mail" />
                 <ScalarProperty Name="kullanici_Tel" ColumnName="kullanici_Tel" />

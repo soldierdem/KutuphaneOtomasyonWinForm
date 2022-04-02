@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KutuphaneOtomasyonWinForm.Kullanici;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,8 @@ namespace KutuphaneOtomasyonWinForm
         }
 
         int buttonClickCount = 0;
+        int buttonClickCount2 = 0;
+
 
         KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
 
@@ -66,6 +69,14 @@ namespace KutuphaneOtomasyonWinForm
         private void ekleKullaniciBtn_Click(object sender, EventArgs e)
         {
 
+            if (buttonClickCount2 == 0)
+            {
+                buttonClickCount2 += 1;
+
+                KullaniciEkleForm kullaniciEkleForm = new KullaniciEkleForm();
+                kullaniciEkleForm.MdiParent = this;
+                kullaniciEkleForm.Show();
+            }
         }
     }
 }
