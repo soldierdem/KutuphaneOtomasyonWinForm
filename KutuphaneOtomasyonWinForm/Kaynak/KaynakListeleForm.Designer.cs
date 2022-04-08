@@ -1,6 +1,6 @@
 ﻿namespace KutuphaneOtomasyonWinForm.Kitap
 {
-    partial class KitapListeleForm
+    partial class KaynakListeleForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridKaynaklarView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridKaynaklarView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridKaynaklarView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(800, 450);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridKaynaklarView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridKaynaklarView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridKaynaklarView.Location = new System.Drawing.Point(0, 0);
+            this.dataGridKaynaklarView.Name = "dataGridKaynaklarView";
+            this.dataGridKaynaklarView.Size = new System.Drawing.Size(800, 450);
+            this.dataGridKaynaklarView.TabIndex = 0;
             // 
-            // KitapListeleForm
+            // KaynakListeleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "KitapListeleForm";
-            this.Text = "KitapListeleForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Controls.Add(this.dataGridKaynaklarView);
+            this.Name = "KaynakListeleForm";
+            this.Text = "KaynakListeleForm";
+            this.Load += new System.EventHandler(this.KaynakListeleForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridKaynaklarView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridKaynaklarView;
     }
 }

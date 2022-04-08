@@ -24,6 +24,8 @@ namespace KutuphaneOtomasyonWinForm
         int buttonClickCount3 = 0;
         int buttonClickCount4 = 0;
         int buttonClickCount5 = 0;
+        int buttonClickCount6 = 0;
+
 
 
 
@@ -38,9 +40,9 @@ namespace KutuphaneOtomasyonWinForm
             //dataGridViewKullanicilar.Visible = false;
 
             //Kitap butonları başlangıçta kapalıdır.(ekle-güncelle-sil)
-            ekleKitapBtn.Visible = false;
-            guncelleKitapBtn.Visible = false;
-            silKitapBtn.Visible = false;
+            ekleKaynakBtn.Visible = false;
+            guncelleKaynakBtn.Visible = false;
+            silKaynakBtn.Visible = false;
         }
 
 
@@ -114,30 +116,48 @@ namespace KutuphaneOtomasyonWinForm
             }
         }
 
-        private void kitaplarBtn_Click(object sender, EventArgs e)
+        private void kaynaklarBtn_Click(object sender, EventArgs e)
         {
-            if (ekleKitapBtn.Visible == false)
+            if (ekleKaynakBtn.Visible == false)
             {
-                ekleKitapBtn.Visible = true;
-                guncelleKitapBtn.Visible = true;
-                silKitapBtn.Visible = true;
+                ekleKaynakBtn.Visible = true;
+                guncelleKaynakBtn.Visible = true;
+                silKaynakBtn.Visible = true;
             }
             else
             {
-                ekleKitapBtn.Visible = false;
-                guncelleKitapBtn.Visible = false;
-                silKitapBtn.Visible = false;
+                ekleKaynakBtn.Visible = false;
+                guncelleKaynakBtn.Visible = false;
+                silKaynakBtn.Visible = false;
             }
 
             if (buttonClickCount5 == 0)
             {
                 buttonClickCount5 += 1;
 
-                KitapListeleForm kitapListeleForm = new KitapListeleForm();
-                kitapListeleForm.MdiParent = this;
-                kitapListeleForm.Show();
+                KaynakListeleForm kaynakListeleForm = new KaynakListeleForm();
+                kaynakListeleForm.MdiParent = this;
+                kaynakListeleForm.Show();
             }
         }
 
+        private void ekleKaynakBtn_Click(object sender, EventArgs e)
+        {
+            if (buttonClickCount6 == 0)
+            {
+                buttonClickCount6 += 1;
+
+                KaynakEkleForm kaynakEkleForm = new KaynakEkleForm();
+                kaynakEkleForm.MdiParent = this;
+                kaynakEkleForm.Show();
+            }
+        }
+
+        private void silKaynakBtn_Click(object sender, EventArgs e)
+        {
+            KaynakSilForm kaynakSilForm = new KaynakSilForm();
+            kaynakSilForm.MdiParent = this;
+            kaynakSilForm.Show();
+        }
     }
 }
