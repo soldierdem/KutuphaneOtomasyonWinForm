@@ -92,6 +92,7 @@
             this.guncelleKaynakBtn.TabIndex = 21;
             this.guncelleKaynakBtn.Text = "Guncelle";
             this.guncelleKaynakBtn.UseVisualStyleBackColor = false;
+            this.guncelleKaynakBtn.Click += new System.EventHandler(this.guncelleKaynakBtn_Click);
             // 
             // ekleKaynakBtn
             // 
